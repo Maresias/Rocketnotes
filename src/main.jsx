@@ -8,11 +8,11 @@ import theme from './styles/theme'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
 
-    <themeProvider theme={theme}>
+    <ThemeProvider theme={theme}>
 
       <Details/>
 
-    </themeProvider>
+    </ThemeProvider>
 
   </React.StrictMode>,
 )
