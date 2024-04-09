@@ -5,6 +5,12 @@ import { ThemeProvider } from 'styled-components'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Details/>
+
+    <themeProvider>
+
+      <Details/>
+      
+    </themeProvider>
+
   </React.StrictMode>,
 )
