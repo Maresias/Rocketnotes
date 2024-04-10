@@ -12,6 +12,10 @@ export default createGlobalStyle`
         color: ${({theme }) => theme.COLORS.WHITE};
     }
 
+    body, input, button, textarea, {
+        
+    }
+
     a{
         text-decoration: none;
     }
