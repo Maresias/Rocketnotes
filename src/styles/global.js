@@ -13,7 +13,7 @@ export default createGlobalStyle`
     }
 
     body, input, button, textarea, {
-        
+        font-family: "Roboto Slab", serif;
     }
 
     a{
