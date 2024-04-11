@@ -7,6 +7,8 @@ export function Details(){
     <Container>
       <h1>Hello World</h1>
       <h2>Alexandre</h2>
+
+      <Button/>
     </Container>
   )
 }
