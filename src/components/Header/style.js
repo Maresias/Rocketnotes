@@ -15,3 +15,8 @@ export const Container = styled.header`
 
     background-color: cornflowerblue;
 `
+
+export const Profile = styled.div`
+    
+`
+
