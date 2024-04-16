@@ -4,7 +4,7 @@ export function Header(){
     return (
         <Container>
             <Profile>
-                <img src="httpd" alt="" />
+                <img src="https://github.com/Maresias.png" alt="foto de uma pessoa" />
             </Profile>
         </Container>
     )
