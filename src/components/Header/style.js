@@ -12,4 +12,6 @@ export const Container = styled.header`
     justify-content:  space-around;
 
     padding:  0 8rem;
+
+    background-color: cornflowerblue;
 `
