@@ -9,7 +9,7 @@ export const Container = styled.header`
     border-bottom: 1px solid ${({theme }) => theme.COLORS.BACKGROUND_700};
 
     display: flex;
-    justify-content:  space-around;
+    justify-content:  space-between;
 
     padding:  0 8rem;
 `
@@ -35,7 +35,10 @@ export const Profile = styled.div`
             color: ${({theme}) => theme.COLORS.GRAY_100};
         }
 
-        
+        strong{
+            font-size: 1.8rem;
+            color: ${({theme}) => theme.COLORS.WHITE};
+        }
     }
 `
 
