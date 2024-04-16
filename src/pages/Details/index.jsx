@@ -5,11 +5,9 @@ import { Button } from '../../components/button'
 export function Details(){
   return (
     <Container>
-      <h1>Hello World</h1>
-      <h2>Alexandre</h2>
-
-      <Button title="Voltar" />
       
+      <Button title="Voltar" />
+
     </Container>
   )
 }
