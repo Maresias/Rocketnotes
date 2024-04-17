@@ -49,7 +49,7 @@ export const Logout = styled.button`
     background: none;
 
     > svg{
-        color: ${({ theme }) => theme.COLORS.ORANGE};
+        color: ${({ theme }) => theme.COLORS.GRAY_100};
         font-size: 2.4rem;
     }
 `
