@@ -40,5 +40,10 @@ export const Profile = styled.div`
             color: ${({theme}) => theme.COLORS.WHITE};
         }
     }
+
+    
 `
 
+export const Logout = styled.button`
+
+`
