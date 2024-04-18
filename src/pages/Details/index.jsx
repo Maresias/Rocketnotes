@@ -1,4 +1,4 @@
-import {Container} from './styles'
+import {Container, Links} from './styles'
 
 
 import { Header } from '../../components/Header'
@@ -12,11 +12,11 @@ export function Details(){
       < Header/>
       
       <Section title= "Links úteis" > 
-        <ul>
+        <Links>
           <li>Oi</li>
           <li>cade</li>
           <li>vice</li>
-        </ul>
+        </Links>
 
       </Section>
 
