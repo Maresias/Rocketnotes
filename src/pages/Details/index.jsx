@@ -4,6 +4,7 @@ import {Container, Links} from './styles'
 import { Header } from '../../components/Header'
 import { Section } from '../../components/Section'
 import { Button } from '../../components/button'
+import { Tag } from '../../components/Tag'
 
 export function Details(){
   return (
@@ -20,7 +21,8 @@ export function Details(){
       </Section>
 
       <Section title="Marcadores">
-
+        <Tag title='Express'/>
+        <Tag title='Nodejs' />
       </Section>
 
 
