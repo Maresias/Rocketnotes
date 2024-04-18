@@ -19,6 +19,10 @@ export function Details(){
 
       </Section>
 
+      <Section title="Marcadores">
+
+      </Section>
+
 
       <Button title="Voltar" />
 
