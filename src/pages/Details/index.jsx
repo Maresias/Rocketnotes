@@ -13,7 +13,7 @@ export function Details(){
       
       <Section title= "Links úteis" > 
         <Links>
-          <li>Oi</li>
+          <li><a href="#">Carro</a></li>
           <li>cade</li>
           <li>vice</li>
         </Links>
