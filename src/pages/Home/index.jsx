@@ -9,6 +9,8 @@ export function Home(){
                <h1>RocketNotes</h1>
             </Brand>
 
+            <Header/>
+
             <Menu>
             </Menu>
 
