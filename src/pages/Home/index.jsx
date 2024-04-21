@@ -14,8 +14,8 @@ export function Home(){
             <Menu>
             </Menu>
 
-            <Seach>
-            </Seach>
+            <Search>
+            </Search>
 
             <Content>
             </Content>
