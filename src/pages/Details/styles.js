@@ -12,6 +12,12 @@ export const Container = styled.div `
      "header"
      "content"
     ;
+
+    > main{
+        grid-area: content;
+        overflow-y: scroll;
+        padding: 6.4rem 0;
+    }
 `
 
 export const Links = styled.ul`
