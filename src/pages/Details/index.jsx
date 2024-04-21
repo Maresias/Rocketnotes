@@ -1,4 +1,4 @@
-import {Container, Links} from './styles'
+import {Container, Links, Content} from './styles'
 
 
 import { Header } from '../../components/Header'
