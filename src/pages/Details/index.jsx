@@ -13,23 +13,27 @@ export function Details(){
     <Container>
       
       < Header/>
-      <ButtonText title="Excluir nota"/>
-      
-      <Section title= "Links úteis" > 
-        <Links>
-          <li><a href="#">https://www.rocketsest.com.br</a></li>
-          <li><a href="#">https://www.rocketsest.com.br</a></li>
-        </Links>
+        <main>
+            <Content>
+             <ButtonText title="Excluir nota"/>
+          
+              <Section title= "Links úteis" > 
+              <Links>
+                <li><a href="#">https://www.rocketsest.com.br</a></li>
+                <li><a href="#">https://www.rocketsest.com.br</a></li>
+              </Links>
 
-      </Section>
+              </Section>
 
-      <Section title="Marcadores">
-        <Tag title='Express'/>
-        <Tag title='Nodejs' />
-      </Section>
+              <Section title="Marcadores">
+                <Tag title='Express'/>
+                <Tag title='Nodejs' />
+              </Section>
 
 
-      <Button title="Voltar" />
+              <Button title="Voltar" />
+            </Content>
+        </main>
 
     </Container>
   )
