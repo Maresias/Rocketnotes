@@ -13,9 +13,15 @@ export function Home(){
             <Header/>
 
             <Menu>
-                <ButtonText title="Todos"/>
-                <ButtonText title="React"/>
-                <ButtonText title="NodeJs"/>
+                <li>
+                    <ButtonText title="Todos"/>
+                </li>
+                <li>
+                    <ButtonText title="React"/>
+                </li>
+                <li>
+                    <ButtonText title="NodeJs"/>
+                </li>
             </Menu>
 
             <Search>
