@@ -13,9 +13,9 @@ export function Home(){
             <Header/>
 
             <Menu>
-                <ButtonText/>
-                <ButtonText/>
-                <ButtonText/>
+                <ButtonText title="Todos"/>
+                <ButtonText title="React"/>
+                <ButtonText title="NodeJs"/>
             </Menu>
 
             <Search>
