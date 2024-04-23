@@ -32,6 +32,8 @@ export function Home(){
             </Content>
 
             <NewNote>
+                <FiPlus/>
+                 Criar nota
             </NewNote>
         </Container>
     )
