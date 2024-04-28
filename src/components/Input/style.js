@@ -24,8 +24,9 @@ export const Container = styled.div`
             color: ${({ theme }) => theme.COLORS.GRAY_300};
         }
 
-        > SVG {
-            margin-left: 1.6rem;
-        }
+
     }
+    > SVG {
+            margin: 0 1.6rem;
+        }
 `
