@@ -6,6 +6,7 @@ export const Container = styled.button`
     
     border: none;
     border-radius: 1.6rem;
+ 
 
     > h1 {
         flex: 1;

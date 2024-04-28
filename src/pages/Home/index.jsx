@@ -38,8 +38,8 @@ export function Home(){
                    <Note data={{
                      title: "React",
                      tags: [
-                        {id:"1", nome:"react"},
-                        {id:"2", nome:"rocketseat"}
+                        {id:"1", name:"react"},
+                        {id:"2", name:"rocketseat"}
                      ]
                    }}/>
                 </Section>
