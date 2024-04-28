@@ -1,6 +1,7 @@
 import { FiPlus, FiSearch } from 'react-icons/fi'
 import { Container, Brand, Menu, Search, Content, NewNote } from './styles'
 
+import { Note } from '../../components/Note'
 import { Header } from '../../components/Header'
 import { ButtonText } from '../../components/ButtonText'
 import { Section } from '../../components/Section'
@@ -32,7 +33,7 @@ export function Home(){
             </Search>
 
             <Content>
-                <Section>
+                <Section title="Minhas notas"> 
 
                 </Section>
             </Content>
