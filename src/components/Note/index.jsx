@@ -1,4 +1,5 @@
 import { Container } from './styleds'
+import { Tag } from '../Tag'
 
 export function Note ({ data, ...rest}) {
     return (
@@ -10,9 +11,7 @@ export function Note ({ data, ...rest}) {
                 <footer>
                     {
                         data.tags.map(tag =>{
-                            <span key={tag.id}>
-                                { tag.name}
-                            </span>
+                            <Tag key={ tag.name} title={tag.name}/>
                         })
                     }
                 </footer>
