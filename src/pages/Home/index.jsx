@@ -6,6 +6,7 @@ import { Header } from '../../components/Header'
 import { ButtonText } from '../../components/ButtonText'
 import { Section } from '../../components/Section'
 import { Input } from '../../components/Input'
+import { Tag } from '../../components/Tag'
 
 export function Home(){
     return (
@@ -34,7 +35,13 @@ export function Home(){
 
             <Content>
                 <Section title="Minhas notas"> 
-
+                   <Note data={{
+                     title: "React",
+                     tags: [
+                        {id:"1", nome:"react"},
+                        {id:"2", nome:"rocketseat"}
+                     ]
+                   }}/>
                 </Section>
             </Content>
 
