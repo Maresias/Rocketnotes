@@ -6,6 +6,7 @@ export const Container = styled.button`
     
     border: none;
     border-radius: 1.6rem;
+    padding: 0 3rem;
  
 
     > h1 {
@@ -14,5 +15,12 @@ export const Container = styled.button`
         font-weight: 700;
         font-size: 2.4rem;
         color: ${({ theme }) => theme.COLORS.WHITE};
+    }
+
+    > footer {
+        width: 100%;
+        display: flex;
+        margin-top: 2.4rem;
+        margin-bottom: 1rem;
     }
 `
