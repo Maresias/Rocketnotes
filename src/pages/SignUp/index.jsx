@@ -7,6 +7,7 @@ import { Button } from '../../components/button'
 export function SignUp (){
     return (
         <Container>
+             <Background/>
             <Form>
                 <h1>Rocket Notes</h1>
                 <p>Aplicação para salvar e gerenciar seus links úteis.</p>
@@ -31,7 +32,6 @@ export function SignUp (){
 
                 <a href="#"> Criar Conta</a>
             </Form>
-            <Background/>
         </Container>
     )
 }
