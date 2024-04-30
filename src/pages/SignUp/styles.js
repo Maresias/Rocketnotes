@@ -24,8 +24,8 @@ export const Form = styled.form`
     }
     > h2 {
         font-size: 2.4rem;
-        margin-top: 8.4rem;
-        margin-bottom: 2.4rem;
+        margin: 4.8rem  0;
+  
     }
 
     > p {
