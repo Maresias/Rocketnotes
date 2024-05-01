@@ -3,6 +3,7 @@ import { Container, Form } from "./styles";
 
 
 import { Input  } from '../../components/Input'
+import { Button } from '../../components/button'
 
 
 export function Profile(){
@@ -32,6 +33,14 @@ export function Profile(){
                     type="password"
                     icon={FiLock}
                 />
+
+                <Input
+                    placeholder="Nova Senha"
+                    type="password"
+                    icon={FiLock}
+                />
+
+                <Button title={"Salvar"}/>
 
             </Form>
 
