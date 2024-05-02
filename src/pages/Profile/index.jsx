@@ -24,7 +24,10 @@ export function Profile(){
                     <label htmlFor="avatar">
                         <FiCamera/>
 
-                        <input/>
+                        <input
+                            id="avatar"
+                            type="file"
+                        />
                     </label>
 
                 </Avatar>
