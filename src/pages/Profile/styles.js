@@ -25,3 +25,7 @@ export const Form = styled.form`
     max-width: 340px;
     margin: 3rem auto 0;
 `
+
+export const Avatar = styled.div`
+    
+`
