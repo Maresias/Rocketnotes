@@ -1,4 +1,4 @@
-import { FiArrowLeft, FiUser, FiMail, FiLock } from "react-icons/fi";
+import { FiArrowLeft, FiUser, FiMail, FiLock, FiCamera } from "react-icons/fi";
 import { Container, Form } from "./styles";
 
 
@@ -20,6 +20,13 @@ export function Profile(){
                 <Avatar>
                     <img src="https://github.com/maresias" 
                     alt="Imagen do usuário" />
+
+                    <label htmlFor="avatar">
+                        <FiCamera/>
+
+                        <input/>
+                    </label>
+
                 </Avatar>
 
                 <Input
