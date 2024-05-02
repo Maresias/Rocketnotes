@@ -15,4 +15,17 @@ export const Container = styled.div`
 export const Form = styled.div`
     max-width: 550px;
     margin: 3.8rem auto;
+
+    > header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin-bottom: 3.6rem;
+
+        a {
+            font-size: 2.0rem;
+            color: ${({ theme }) => theme.COLORS.GRAY_100};
+        }
+    }
 `
