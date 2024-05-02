@@ -16,6 +16,12 @@ export function Profile(){
             </header>
 
             <Form>
+
+                <Avatar>
+                    <img src="https://github.com/maresias" 
+                    alt="Imagen do usuário" />
+                </Avatar>
+
                 <Input
                     placeholder="Nome"
                     type="text"
