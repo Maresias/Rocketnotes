@@ -1,5 +1,5 @@
 import { Header } from '../../components/Header'
-import { Input } from '../../components/Header'
+import { Input } from '../../components/Input'
 
 import { Container, Form} from './styles'
 
@@ -16,7 +16,7 @@ export function New() {
                     </header>
 
                     <Input placeholder="Título"/>
-                    
+
                 </Form>
             </main>
         </Container>

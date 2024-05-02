@@ -11,3 +11,8 @@ export const Container = styled.div`
      "content"
     ;
 `
+
+export const Form = styled.div`
+    max-width: 550px;
+    margin: 3.8rem auto;
+`
