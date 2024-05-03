@@ -10,6 +10,12 @@ export const Container = styled.div`
      "header"
      "content"
     ;
+
+    .tags{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap:wrap;
+    }
 `
 
 export const Form = styled.div`
