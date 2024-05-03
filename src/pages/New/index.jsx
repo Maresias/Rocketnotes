@@ -3,6 +3,7 @@ import { Input } from '../../components/Input'
 import { Textarea } from '../../components/Textarea'
 import { NoteItem } from '../../components/NoteItem'
 import { Section } from '../../components/Section'
+import { Button } from '../../components/button'
 
 import { Container, Form} from './styles'
 
