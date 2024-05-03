@@ -19,10 +19,18 @@ export function New() {
                     </header>
 
                     <Input placeholder="Título"/>
+
                     <Textarea placeholder="Observações"/>
+
                     <Section title="Links úteis">
+
                         <NoteItem value="https://rocketseat.com.br"/>
                         <NoteItem isNew placeholder="Novo link"/>
+
+                    </Section>
+
+                    <Section title="marcadores">
+
                     </Section>
                 </Form>
             </main>
