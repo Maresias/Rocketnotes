@@ -11,6 +11,11 @@ export const Container = styled.div`
      "content"
     ;
 
+    > main {
+        grid-area: content;
+        overflow-y:scroll;
+    }
+
     .tags{
         display: flex;
         justify-content: space-between;
