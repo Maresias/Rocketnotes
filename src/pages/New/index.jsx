@@ -35,7 +35,7 @@ export function New() {
                         <div className="tags">
 
                             <NoteItem value={"React"}/>
-                            <NoteItem isNew placeholder="Nova Tag"/>
+                            <NoteItem placeholder="Nova Tag" isNew/>
 
                         </div>
 
