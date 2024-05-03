@@ -33,11 +33,15 @@ export function New() {
                     <Section title="marcadores">
 
                         <div className="tags">
+
                             <NoteItem value={"React"}/>
                             <NoteItem isNew placeholder="Nova Tag"/>
+
                         </div>
 
                     </Section>
+                    
+                    <Button title={"Salvar"}/>
                 </Form>
             </main>
         </Container>
