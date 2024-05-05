@@ -27,8 +27,10 @@ export function SignIn(){
                 />
 
                 <Button title="Cadastra"/>
-
-                <a href="#"> Criar Conta</a>
+                
+                <Link to="/register">
+                    Criar Conta
+                </Link>
             </Form>
 
             <Background/>
