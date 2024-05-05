@@ -60,11 +60,11 @@ export const Content  = styled.div`
     overflow-y:auto;
 `
 
-export const NewNote = styled.button`
+export const NewNote = styled(Link)`
     grid-area: newnote;
 
     background-color: ${({ theme }) => theme.COLORS.ORANGE};
-    border: none;
+    color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
 
     display: flex;
     align-items: center;
