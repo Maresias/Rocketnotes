@@ -12,7 +12,9 @@ export function SignUp (){
     const [password, setPassword ] = useState("")
 
     function handleSignUp(){
-        console.log(name, email, password)
+        if(!name || !email || !password){
+            return alert("Todos os campos devem ser preenchidos !!!")
+        }
     }
 
     return (
