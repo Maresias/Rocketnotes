@@ -7,6 +7,9 @@ import { Input } from "../../components/Input"
 import { Button } from '../../components/button'
 
 export function SignUp (){
+    const [name, setName ] = useState("")
+    const [email, setEmail ] = useState("")
+    const [password, setPassword ] = useState("")
     return (
         <Container>
              <Background/>
