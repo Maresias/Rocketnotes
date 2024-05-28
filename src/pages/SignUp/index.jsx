@@ -11,8 +11,10 @@ export function SignUp (){
     const [email, setEmail ] = useState("")
     const [password, setPassword ] = useState("")
 
+    function handleSignUp(){
+        console.log(name, email, password)
+    }
 
-    
     return (
         <Container>
              <Background/>
@@ -43,7 +45,7 @@ export function SignUp (){
                     onChange={e => setPassword(e.target.value)}
                 />
 
-                <Button title="Cadastra"/>
+                <Button title="Cadastra" onClick={handleSignUp}/>
 
                 <Link to="/">
                     Voltar para o login
