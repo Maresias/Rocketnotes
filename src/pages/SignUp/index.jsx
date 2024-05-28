@@ -10,6 +10,9 @@ export function SignUp (){
     const [name, setName ] = useState("")
     const [email, setEmail ] = useState("")
     const [password, setPassword ] = useState("")
+
+
+    
     return (
         <Container>
              <Background/>
@@ -23,18 +26,21 @@ export function SignUp (){
                     placeholder="Nome"
                     type="text"
                     icon={FiUser}
+                    onChange={e => setName(e.target.value)}
                 />
 
                 <Input
                     placeholder="E-mail"
                     type="text"
                     icon={FiMail}
+                    onChange={e => setEmail(e.target.value)}
                 />
 
                 <Input
                     placeholder="Senha"
                     type="password"
                     icon={FiLock}
+                    onChange={e => setPassword(e.target.value)}
                 />
 
                 <Button title="Cadastra"/>
