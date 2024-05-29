@@ -3,6 +3,8 @@ import { Container, Form, Background } from './styles'
 import { FiMail, FiLock, FiUser} from 'react-icons/fi'
 import { Link } from 'react-router-dom'
 
+import { api } from '../../services/api'
+
 import { Input } from "../../components/Input"
 import { Button } from '../../components/button'
 
@@ -15,6 +17,8 @@ export function SignUp (){
         if(!name || !email || !password){
             return alert("Todos os campos devem ser preenchidos !!!")
         }
+
+        
     }
 
     return (
