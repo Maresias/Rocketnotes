@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Container, Form, Background } from './styles'
 import { FiMail, FiLock, FiUser} from 'react-icons/fi'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate} from 'react-router-dom'
 
 import { api } from '../../services/api'
 
@@ -13,6 +13,8 @@ export function SignUp (){
     const [email, setEmail ] = useState("")
     const [password, setPassword ] = useState("")
 
+    const navigate = useNavigate()
+
     function handleSignUp(){
         if(!name || !email || !password){
             return alert("Todos os campos devem ser preenchidos !!!")
@@ -21,6 +23,7 @@ export function SignUp (){
         api.post("/users", {name, email, password})
         .then(()=>{
             alert("Usuário cadastrado com sucesso!")
+            navigate("/")
         })
         .catch(error =>{
             if(error.response){
