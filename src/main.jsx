@@ -16,7 +16,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
       <GlobalStyles/>
 
-      <MyContext.Provider value={{email: 'alexandre@alexandre.com'}} >
+      <MyContext.Provider value={{nome: "Alexandre",email: 'alexandre@alexandre.com'}} >
         <Routes/>
       </MyContext.Provider>
         
