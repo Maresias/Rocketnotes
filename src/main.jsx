@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { ThemeProvider } from 'styled-components'
 import GlobalStyles from './styles/global'
 
-import { MyContext } from './myContext'
+import { MyContext } from './hooks/myContext'
 
 import { Routes } from './routes'
 
