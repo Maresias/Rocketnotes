@@ -1,4 +1,3 @@
-import { useContext } from 'react'
 import { Container, Form, Background } from './styles'
 import { FiMail, FiLock } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
