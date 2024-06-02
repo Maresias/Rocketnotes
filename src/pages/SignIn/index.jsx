@@ -9,8 +9,11 @@ import { Input } from '../../components/Input'
 import { Button } from '../../components/button'
 
 export function SignIn(){
-    const data = useAuth()
-    console.log("Meu Contexto =>", data)
+    const { signIn }  = useAuth()
+    
+    function handleSignIn(){
+        signIn()
+    }
 
     return (
         <Container>
