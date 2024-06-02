@@ -9,7 +9,10 @@ function AuthProvider({children}){
     async function signIn({email, password}){
         try{
             const response = await api.post("/sessions", { email, password})
-            console.log(response)
+
+            const { user, token } = response.data
+
+            console.log(user, token)
         }catch(error){
             if(error.response){
                 console.log(error.response.data.message)
