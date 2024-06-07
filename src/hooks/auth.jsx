@@ -15,6 +15,9 @@ function AuthProvider({children}){
             api.defaults.headers.authorization = `Bearer ${token}`
             setData({user, token})
 
+            localStorage.setItem("@rocketnotes:user", JSON.stringify(user))
+            localStorage.setItem("@rocketnotes:token", `Bearer ${token}`)
+
         }catch(error){
             if(error.response){
                 console.log(error.response.data.message)
