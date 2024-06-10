@@ -9,6 +9,12 @@ import { Button } from '../../components/button'
 
 
 export function Profile(){
+    
+    const [name, setName ] = useState()
+    const [email, setEmail ] = useState()
+    const [passwordOld, setPasswordOld] = useState()
+    const [passwordNew, setPasswordNew] = useState()
+
     return (
         <Container>
             <header>
