@@ -34,6 +34,16 @@ function AuthProvider({children}){
         setData({})
     }
 
+    async function updateProfile({user}){
+
+        try{
+            await api.put("/users", user)
+            localStorage.setItem('@rocketnotes:user', JSON.stringify(user))
+        }catch(error){
+
+        }
+    }
+
     useEffect(()=>{
 
         const token = localStorage.getItem("@rocketnotes:token")
