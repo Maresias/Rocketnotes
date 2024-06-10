@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { FiArrowLeft, FiUser, FiMail, FiLock, FiCamera } from "react-icons/fi";
 import { Container, Form, Avatar} from "./styles";
 import { Link } from 'react-router-dom'
