@@ -47,12 +47,14 @@ export function Profile(){
                     placeholder="Nome"
                     type="text"
                     icon={FiUser}
+                    value={name}
                 />
 
                 <Input
                     placeholder="E-mail"
                     type="text"
                     icon={FiMail}
+                    value={email}
                 />
 
                 <Input
