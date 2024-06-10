@@ -3,15 +3,18 @@ import { FiArrowLeft, FiUser, FiMail, FiLock, FiCamera } from "react-icons/fi";
 import { Container, Form, Avatar} from "./styles";
 import { Link } from 'react-router-dom'
 
+import { useAuth } from "../../hooks/auth";
 
 import { Input  } from '../../components/Input'
 import { Button } from '../../components/button'
 
 
 export function Profile(){
-    
-    const [name, setName ] = useState()
-    const [email, setEmail ] = useState()
+
+    const {user} = useAuth()
+
+    const [name, setName ] = useState(user.name)
+    const [email, setEmail ] = useState(user.email)
     const [passwordOld, setPasswordOld] = useState()
     const [passwordNew, setPasswordNew] = useState()
 
