@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom'
 
 import { useAuth } from "../../hooks/auth";
 
+import avaterPlaceholder from '../../assets/avatar_placeholder.svg'
+
 import { Input  } from '../../components/Input'
 import { Button } from '../../components/button'
 
