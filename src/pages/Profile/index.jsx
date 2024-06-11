@@ -31,6 +31,11 @@ export function Profile(){
         await updateProfile({user})
     }
 
+    function handleChangeAvater(event){
+        const { file } = event.target.files[0]
+        setAvaterFile(file)
+    }
+
     return (
         <Container>
             <header>
