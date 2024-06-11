@@ -41,7 +41,7 @@ export function Profile(){
             <Form>
 
                 <Avatar>
-                    <img src="https://github.com/Maresias.png" 
+                    <img src={avater} 
                     alt="Imagen do usuário" />
 
                     <label htmlFor="avatar">
@@ -50,6 +50,7 @@ export function Profile(){
                         <input
                             id="avatar"
                             type="file"
+                            onChange={handleChangeAvater}
                         />
                     </label>
 
