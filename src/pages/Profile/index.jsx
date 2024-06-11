@@ -32,8 +32,11 @@ export function Profile(){
     }
 
     function handleChangeAvater(event){
-        const { file } = event.target.files[0]
+        const file  = event.target.files[0]
         setAvaterFile(file)
+
+        const imagePreview = URL.createObjectURL(file)
+        setAvater(imagePreview)
     }
 
     return (
