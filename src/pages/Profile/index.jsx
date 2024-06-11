@@ -28,7 +28,7 @@ export function Profile(){
             old_password: passwordOld
         }
 
-        await updateProfile({user})
+        await updateProfile({user, avaterFile})
     }
 
     function handleChangeAvater(event){
