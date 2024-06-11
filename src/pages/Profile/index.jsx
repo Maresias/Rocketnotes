@@ -7,6 +7,8 @@ import { useAuth } from "../../hooks/auth";
 
 import avaterPlaceholder from '../../assets/avatar_placeholder.svg'
 
+import { api } from "../../services/api";
+
 import { Input  } from '../../components/Input'
 import { Button } from '../../components/button'
 
@@ -19,6 +21,9 @@ export function Profile(){
     const [email, setEmail ] = useState(user.email)
     const [passwordOld, setPasswordOld] = useState()
     const [passwordNew, setPasswordNew] = useState()
+
+    const avaterUrl = user.avater ?  `${api.defaults.baseURL}/files/${user.avater}` : avaterPlaceholder
+
     const [ avater, setAvater ] = useState(user.avater)
     const [avaterFile, setAvaterFile ] = useState(null)
 
