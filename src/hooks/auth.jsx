@@ -40,11 +40,9 @@ function AuthProvider({children}){
             if(avaterFile){
                 const fileUploadForm = new FormData()
                 fileUploadForm.append("avater", avaterFile)
-    
-                console.log(user)
    
                 const response = await api.patch("users/avater", fileUploadForm)
-                user.avater = response.data.avatar
+                user.avater = response.data.avater
             }
 
             await api.put("/users", user)

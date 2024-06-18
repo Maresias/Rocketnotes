@@ -24,7 +24,7 @@ export function Profile(){
 
     const avaterUrl = user.avater ?  `${api.defaults.baseURL}/files/${user.avater}` : avaterPlaceholder
 
-    const [ avater, setAvater ] = useState(user.avater)
+    const [ avater, setAvater ] = useState(avaterUrl)
     const [avaterFile, setAvaterFile ] = useState(null)
 
     async function handleUpdateProfile(){
