@@ -11,6 +11,9 @@ import { Container, Form} from './styles'
 import { Link } from 'react-router-dom'
 
 export function New() {
+    const [ title, setTitle ] = useState("")
+    const [ description, setDescription ] = useState("")
+
     const [links, setLinks ] = useState([])
     const [newLink, setNewLink] = useState("")
 
@@ -51,6 +54,15 @@ export function New() {
                     <Textarea placeholder="Observações"/>
 
                     <Section title="Links úteis">
+
+                        <NoteItem 
+                         isNew
+                         placeholder="Novo Link"
+                         value={newLink}
+                         onChange={ e => setNewLink( e.target.value)}
+                         onClick={handleAddLink}
+                        />
+
                         {
                             links.map((link, index)=> (
                                 <NoteItem
@@ -60,13 +72,6 @@ export function New() {
                             />
                             ))
                         }
-                        <NoteItem 
-                         isNew
-                         placeholder="Novo Link"
-                         value={newLink}
-                         onChange={ e => setNewLink( e.target.value)}
-                         onClick={handleAddLink}
-                        />
 
                     </Section>
 
