@@ -7,6 +7,9 @@ import { NoteItem } from '../../components/NoteItem'
 import { Section } from '../../components/Section'
 import { Button } from '../../components/button'
 
+import { api } from '../../services/api'
+import { useNavigate } from 'react-router-dom'
+
 import { Container, Form} from './styles'
 import { Link } from 'react-router-dom'
 
@@ -19,6 +22,8 @@ export function New() {
 
     const [ tags, setTags ] = useState([])
     const [ newTag, setNewTag ] = useState("")
+
+    const navigate = useNavigate()
 
     function handleAddLink(){
         setLinks( prevState => [ ...prevState, newLink ])
@@ -38,6 +43,18 @@ export function New() {
         setTags( prevState => prevState.filter( tag => tag !== deleted ))
     }
 
+    async function handleNewNote(){
+        await api.post("/notes", {
+            title,
+            description,
+            tags,
+            links
+        })
+
+        alert("Nota cadastrada com sucesso !!!")
+        navigate("/")
+        console.log(handleNewNote)
+    }
     return (
         <Container>
             <Header/>
@@ -106,7 +123,10 @@ export function New() {
 
                     </Section>
                     
-                    <Button title={"Salvar"}/>
+                    <Button 
+                     title={"Salvar"}
+                     onClick={handleNewNote}
+                      />
                 </Form>
             </main>
         </Container>
