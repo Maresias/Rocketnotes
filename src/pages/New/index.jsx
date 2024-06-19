@@ -49,9 +49,15 @@ export function New() {
                         <Link to="/">Voltar</Link>
                     </header>
 
-                    <Input placeholder="Título"/>
+                    <Input 
+                     placeholder="Título"
+                     onChange={ e => setTitle( e.target.value)}
+                    />
 
-                    <Textarea placeholder="Observações"/>
+                    <Textarea 
+                     placeholder="Observações"
+                     onChange={e => setDescription( e.target.value)}
+                    />
 
                     <Section title="Links úteis">
 
