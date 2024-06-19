@@ -31,6 +31,10 @@ export function New() {
         setNewTag("")
     }
 
+    function handleRemoveTag(deleted){
+        setTags( prevState => prevState.filter( tag => tag !== deleted ))
+    }
+
     return (
         <Container>
             <Header/>
@@ -69,15 +73,6 @@ export function New() {
                     <Section title="marcadores">
 
                         <div className="tags">
-
-                           {
-                            tags.map((tag, index) =>(
-                                <NoteItem
-                                 key={String(index)}
-                                 value={tag}
-                                 />
-                            ))
-                           }
                             <NoteItem  
                              isNew
                              placeholder="Nova Tag"
@@ -85,6 +80,16 @@ export function New() {
                              onChange={ e => setNewTag( e.target.value)}
                              onClick={handleAddTag}
                              />
+
+                            {
+                                tags.map((tag, index) =>(
+                                 <NoteItem
+                                     key={String(index)}
+                                    value={tag}
+                                    onClick={() => handleRemoveTag(tag)}
+                                 />
+                            ))
+                           }
 
                         </div>
 
