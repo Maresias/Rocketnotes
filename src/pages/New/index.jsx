@@ -50,11 +50,10 @@ export function New() {
             tags,
             links
         })
-
         alert("Nota cadastrada com sucesso !!!")
         navigate("/")
-        console.log(handleNewNote)
     }
+
     return (
         <Container>
             <Header/>
