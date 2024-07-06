@@ -2,12 +2,14 @@ import {createContext, useContext, useState, useEffect} from 'react'
 
 import { api } from '../services/api'
 
-import { useNavigate } from 'react-router-dom'
+
 
 export const AuthContext = createContext({})
 
 function AuthProvider({children}){
     const [data, setData] = useState({})
+
+    
 
     async function signIn({email, password}){
         try{
