@@ -44,6 +44,10 @@ export function New() {
     }
 
     async function handleNewNote(){
+
+        if(!title){
+            return alert("Digite o Título da nota")
+        }
         await api.post("/notes", {
             title,
             description,
