@@ -52,6 +52,10 @@ export function New() {
         if(newLink){
             return alert("Você deixou um Link no campo sem ser enviando")
         }
+
+        if(newTag){
+            return alert("Você deixou uma Tag no campo sem ser enviado")
+        }
         await api.post("/notes", {
             title,
             description,
