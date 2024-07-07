@@ -48,6 +48,10 @@ export function New() {
         if(!title){
             return alert("Digite o Título da nota")
         }
+
+        if(newLink){
+            return alert("Você deixou um Link no campo sem ser enviando")
+        }
         await api.post("/notes", {
             title,
             description,
