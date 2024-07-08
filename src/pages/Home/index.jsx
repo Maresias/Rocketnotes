@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { FiPlus } from 'react-icons/fi'
 import { Container, Brand, Menu, Search, Content, NewNote } from './styles'
 
+import { api } from '../../services/api'
+
 import { Note } from '../../components/Note'
 import { Header } from '../../components/Header'
 import { ButtonText } from '../../components/ButtonText'
