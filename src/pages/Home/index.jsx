@@ -20,6 +20,8 @@ export function Home(){
 
             setTags(response.data)
         }
+
+        fatchTags()
     },[])
     return (
         <Container>
@@ -33,12 +35,13 @@ export function Home(){
                 <li>
                     <ButtonText title="Todos" isActive/>
                 </li>
-                <li>
-                    <ButtonText title="React"/>
-                </li>
-                <li>
-                    <ButtonText title="NodeJs"/>
-                </li>
+                {
+                    tags && tags.map( tag =>(
+                        <li key={String(tag.id)}>
+                            <ButtonText title={tag.name}/>
+                        </li>
+                    ))
+                }
             </Menu>
 
             <Search>
