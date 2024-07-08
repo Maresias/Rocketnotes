@@ -15,7 +15,7 @@ export function Home(){
 
 
     useEffect(()=>{
-        
+        async function fatchTags = await api.get("/tags")
     },[])
     return (
         <Container>
