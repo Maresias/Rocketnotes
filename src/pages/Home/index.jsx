@@ -12,7 +12,7 @@ import { Input } from '../../components/Input'
 
 export function Home(){
     const [ tags, setTags ] = useState([])
-
+    const [tagsSelected, setTagsSelected ] = useState([])
 
     useEffect(()=>{
         async function fatchTags(){
