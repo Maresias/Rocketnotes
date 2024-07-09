@@ -11,6 +11,7 @@ import { Section } from '../../components/Section'
 import { Input } from '../../components/Input'
 
 export function Home(){
+    const [seach, setSeach ] = useState("")
     const [ tags, setTags ] = useState([])
     const [tagsSelected, setTagsSelected ] = useState([])
 
@@ -63,7 +64,10 @@ export function Home(){
             </Menu>
 
             <Search>
-                <Input placeholder="Pesquisar pelo titulo"/>
+                <Input 
+                placeholder="Pesquisar pelo titulo"
+                onChange={ ()=> setSeach(e.target.value)}
+                />
             </Search>
 
             <Content>
