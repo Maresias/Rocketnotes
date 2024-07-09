@@ -14,6 +14,10 @@ export function Home(){
     const [ tags, setTags ] = useState([])
     const [tagsSelected, setTagsSelected ] = useState([])
 
+    function handleTagsSelected(tagName){
+        setTagsSelected([tagName])
+    }
+
     useEffect(()=>{
         async function fatchTags(){
             const response = await api.get("/tags")
