@@ -37,12 +37,19 @@ export function Home(){
 
             <Menu>
                 <li>
-                    <ButtonText title="Todos" isActive/>
+                    <ButtonText 
+                    title="Todos" 
+                    onClick={()=> handleTagsSelected("All")}
+                    isActive
+                    />
                 </li>
                 {
                     tags && tags.map( tag =>(
                         <li key={String(tag.id)}>
-                            <ButtonText title={tag.name}/>
+                            <ButtonText 
+                            title={tag.name}
+                            onClick={()=> handleTagsSelected(tag.name)}
+                            />
                         </li>
                     ))
                 }
