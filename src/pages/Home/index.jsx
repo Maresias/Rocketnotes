@@ -16,6 +16,7 @@ export function Home(){
 
     function handleTagsSelected(tagName){
         setTagsSelected([tagName])
+        console.log(tagName)
     }
 
     useEffect(()=>{
@@ -40,7 +41,7 @@ export function Home(){
                     <ButtonText 
                     title="Todos" 
                     onClick={()=> handleTagsSelected("All")}
-                    isActive
+                    isActive={tagsSelected.length === 0}
                     />
                 </li>
                 {
@@ -49,6 +50,7 @@ export function Home(){
                             <ButtonText 
                             title={tag.name}
                             onClick={()=> handleTagsSelected(tag.name)}
+                            isActive={tagsSelected.includes(tag.name)}
                             />
                         </li>
                     ))
