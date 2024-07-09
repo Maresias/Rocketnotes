@@ -14,12 +14,14 @@ export function Home(){
     const [seach, setSeach ] = useState("")
     const [ tags, setTags ] = useState([])
     const [tagsSelected, setTagsSelected ] = useState([])
+    const [ notes, setNotes ] = useState([])
 
     function handleTagsSelected(tagName){
         const alredySelected = tagsSelected.includes(tagName)
         
         if(alredySelected){
             const filteredTags = tagsSelected.filter(tag => tag !== tagName)
+            setTagsSelected(filteredTags)
         }else{
             setTagsSelected(prevState => [...prevState, tagName])
         }
@@ -33,6 +35,15 @@ export function Home(){
 
         fatchTags()
     },[])
+
+    useEffect(() => {
+        async function fatchNotes(){
+            const response = await api.get(`/notes?title=${seach}&tags=${tagsSelected}`)
+            setNotes(response.data)
+        }
+
+        fatchNotes()
+    },[tagsSelected, seach])
 
     return (
         <Container>
@@ -72,13 +83,14 @@ export function Home(){
 
             <Content>
                 <Section title="Minhas notas"> 
-                   <Note data={{
-                     title: "React",
-                     tags: [
-                        {id:"1", name:"react"},
-                        {id:"2", name:"rocketseat"}
-                     ]
-                   }}/>
+                  {
+                    notes.map(note =>(
+                        <Note
+                        key={String(note.id)}
+                        data={note}
+                        />
+                    ))
+                  }
                 </Section>
             </Content>
 
