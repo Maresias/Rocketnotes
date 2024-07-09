@@ -15,19 +15,24 @@ export function Home(){
     const [tagsSelected, setTagsSelected ] = useState([])
 
     function handleTagsSelected(tagName){
-        setTagsSelected([tagName])
-        console.log(tagName)
+        const alredySelected = tagsSelected.includes(tagName)
+        
+        if(alredySelected){
+            const filteredTags = tagsSelected.filter(tag => tag !== tagName)
+        }else{
+            setTagsSelected(prevState => [...prevState, tagName])
+        }
     }
 
-    useEffect(()=>{
+    useEffect(() => {
         async function fatchTags(){
             const response = await api.get("/tags")
-
             setTags(response.data)
         }
 
         fatchTags()
     },[])
+
     return (
         <Container>
             <Brand>
