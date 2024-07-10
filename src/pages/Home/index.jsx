@@ -31,6 +31,10 @@ export function Home(){
         }
     }
 
+    function handleDetais(){
+        
+    }
+
     useEffect(() => {
         async function fatchTags(){
             const response = await api.get("/tags")
