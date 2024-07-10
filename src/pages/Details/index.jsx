@@ -1,9 +1,9 @@
 import {Container, Links, Content} from './styles'
 
 import { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate  } from 'react-router-dom'
 import { api } from '../../services/api'
-import { useNavigate } from 'react-router-dom'
+
 
 
 import { Header } from '../../components/Header'
@@ -16,6 +16,11 @@ import { ButtonText } from '../../components/ButtonText'
 export function Details(){
   const [data, setData] = useState(null)
   const params = useParams()
+  const navigate = useNavigate()
+
+  function handleBack(){
+    navigate("/")
+  }
 
   useEffect(() => { 
     async function fetchNotes(){
@@ -76,7 +81,10 @@ export function Details(){
                 </Section>
               }
 
-              <Button title="Voltar" />
+              <Button
+               title="Voltar"
+               onClick={handleBack}
+                />
             </Content>
         </main>
       }
