@@ -29,36 +29,47 @@ export function Details(){
     <Container>
       
       < Header/>
+
+      {
+        data &&
         <main>
             <Content>
              <ButtonText title="Excluir nota"/>
 
              <h1>
-               Introdução ao React
+               {data.title}
              </h1>
 
              <p>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta error consequuntur
-               aliquam dolorum minima quisquam perspiciatis exercitationem quis? Reprehenderit, 
-               harum! Voluptatem doloremque odit quidem itaque vel vitae placeat natus dolorum.
+               {data.description}
              </p>
-          
+
+             { 
+              data &&
               <Section title= "Links úteis" > 
                 <Links>
-                  <li><a href="#">https://www.rocketsest.com.br</a></li>
-                  <li><a href="#">https://www.rocketsest.com.br</a></li>
+                  {
+                    data.links.map(link => (
+                      <li key={link.id}>
+                        <a href={link.url}>
+                            {link.url}
+                        </a>
+                      </li>
+                    ))
+                  }
                 </Links>
-              </Section>
-
+               </Section>
+              }
               <Section title="Marcadores">
                 <Tag title='Express'/>
                 <Tag title='Nodejs' />
               </Section>
-
+            
 
               <Button title="Voltar" />
             </Content>
         </main>
+      }
 
     </Container>
   )
