@@ -51,7 +51,7 @@ export function Details(){
                   {
                     data.links.map(link => (
                       <li key={String(link.id)}>
-                        <a href={link.url}>
+                        <a href={link.url} target='_blank'>
                             {link.url}
                         </a>
                       </li>
