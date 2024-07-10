@@ -1,5 +1,7 @@
 import {Container, Links, Content} from './styles'
 
+import { useParams } from 'react-router-dom'
+
 
 import { Header } from '../../components/Header'
 import { Section } from '../../components/Section'
