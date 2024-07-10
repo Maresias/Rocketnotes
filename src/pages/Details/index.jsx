@@ -1,6 +1,9 @@
 import {Container, Links, Content} from './styles'
 
+import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
+import { api } from '../../services/api'
+import { useNavigate } from 'react-router-dom'
 
 
 import { Header } from '../../components/Header'
@@ -11,6 +14,17 @@ import { ButtonText } from '../../components/ButtonText'
 
 
 export function Details(){
+  const [data, setData] = useState(null)
+  const params = useParams
+
+  useEffect(() => { 
+    async function fetchNotes(){
+      const response = await api.get(`/notes/${params.id}`)
+      setData(response.data)
+    }
+
+    fetchNotes()
+  },[])
   return (
     <Container>
       
