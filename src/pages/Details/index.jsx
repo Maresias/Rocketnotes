@@ -15,7 +15,7 @@ import { ButtonText } from '../../components/ButtonText'
 
 export function Details(){
   const [data, setData] = useState(null)
-  const params = useParams
+  const params = useParams()
 
   useEffect(() => { 
     async function fetchNotes(){
@@ -60,11 +60,21 @@ export function Details(){
                 </Links>
                </Section>
               }
-              <Section title="Marcadores">
-                <Tag title='Express'/>
-                <Tag title='Nodejs' />
-              </Section>
-            
+
+              {
+                data &&
+
+                <Section title="Marcadores">
+                  {
+                    data.tags.map(tag =>(
+                      <Tag 
+                      key={String(tag.id)}
+                      title={tag.name}/>
+                    ))
+                    
+                  }
+                </Section>
+              }
 
               <Button title="Voltar" />
             </Content>
