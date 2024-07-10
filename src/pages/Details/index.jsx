@@ -37,6 +37,7 @@ export function Details(){
 
       {
         data &&
+        
         <main>
             <Content>
              <ButtonText title="Excluir nota"/>
