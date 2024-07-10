@@ -13,4 +13,5 @@ export const Container = styled.section`
         font-size: 2.0rem;
         font-weight: 400;
     }
+
 `

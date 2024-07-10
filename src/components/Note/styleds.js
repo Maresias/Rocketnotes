@@ -23,4 +23,7 @@ export const Container = styled.button`
         margin-top: 2.4rem;
         margin-bottom: 1rem;
     }
+
+    margin-bottom: 1rem;
+    padding-top: 1rem;
 `

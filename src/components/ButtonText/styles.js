@@ -6,4 +6,5 @@ export const Container = styled.button`
     
     border: none;
     font-size: 1.6rem;
+    
 `

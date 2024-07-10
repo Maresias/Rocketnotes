@@ -16,6 +16,7 @@ export const Container  = styled.div`
     ;
 
     background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
+    
 `
 
 export const Brand  = styled.div`
@@ -46,6 +47,7 @@ export const Menu  = styled.ul`
     > li {
         margin-bottom: 2.4rem;
     }
+   
 `
 
 export const Search  = styled.div`
@@ -58,6 +60,7 @@ export const Content  = styled.div`
     grid-area: content;
     padding: 0 6.4rem;
     overflow-y:auto;
+    
 `
 
 export const NewNote = styled(Link)`
