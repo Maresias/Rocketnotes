@@ -50,7 +50,7 @@ export function Details(){
                 <Links>
                   {
                     data.links.map(link => (
-                      <li key={link.id}>
+                      <li key={String(link.id)}>
                         <a href={link.url}>
                             {link.url}
                         </a>
