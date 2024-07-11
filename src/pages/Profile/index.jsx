@@ -34,14 +34,14 @@ export function Profile(){
     }
 
     async function handleUpdateProfile(){
-        const user = {
+        const updated = {
             name,
             email,
             password: passwordNew,
             old_password: passwordOld
         }
-
-        await updateProfile({user, avaterFile})
+        const userUpdated = Object.assign(user, updated)
+        await updateProfile({user: userUpdated, avaterFile})
     }
 
     function handleChangeAvater(event){
