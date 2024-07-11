@@ -26,6 +26,7 @@ export function Details(){
     const confirm = window.confirm("Deseja realmente remover a nota?")
 
     if(confirm){
+      await api.delete(`/notes/${params.id}`)
       navigate("/")
     }
   }
