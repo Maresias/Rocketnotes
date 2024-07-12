@@ -14,6 +14,7 @@ export function Header(){
 
     function handleSignOut(){
         navigate("/")
+        signOut()
     }
     const avaterUrl = user.avater ?  `${api.defaults.baseURL}/files/${user.avater}` : avaterPlaceholder
     return (
