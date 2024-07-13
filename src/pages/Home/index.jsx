@@ -39,12 +39,12 @@ export function Home(){
     }
 
     useEffect(() => {
-        async function fatchTags(){
+        async function fetchTags(){
             const response = await api.get("/tags")
             setTags(response.data)
         }
 
-        fatchTags()
+        fetchTags()
     },[])
 
     useEffect(() => {
