@@ -40,7 +40,7 @@ export function Home(){
 
     useEffect(() => {
         async function fetchTags(){
-            const response = await api.get("/tags")
+            const response = await api.get("/tags/")
             setTags(response.data)
         }
 
