@@ -22,7 +22,7 @@ rad.json
 TestResults.xml
 
 
-node_moduless
+node_modules
 dist
 dist-ssr
 *.local
